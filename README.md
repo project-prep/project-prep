@@ -203,12 +203,13 @@ As a user, I want to see the title, date it was released, and a short descriptio
 
 Feature Tasks:
 
-- User sees relevant movie data displayed
+User sees relevant movie data displayed
 
 Acceptance Task:
 
-- Ensure schema has minimum requirements for movie data
-- Ensure movie data is available or message indicating it is unavailable
+Ensure schema has minimum requirements for movie data
+
+Ensure movie data is available or message indicating it is unavailable
 
 Estimate:  medium
 
