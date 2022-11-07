@@ -1,7 +1,7 @@
 # Team Agreement Nerissa Leynes, Mandela Steele-Dadzie, Marc Wagner, Jordan Kwan
 
 Team Agreement
-Cooperation Plan - Nerissa
+Cooperation Plan
 What are the key strengths of each person on the team?
 Ok with backend, styling the page, willingness to learn, curiosity
 How can you best utilize these strengths in the execution of your project?
@@ -93,4 +93,128 @@ As often as needed, erring on overcommunication
 
 [Presentation Deck](https://docs.google.com/presentation/d/1AcTZDXm-QHmX6r9uZgflwmmx_ZWlg2eTlbhciegRUmA/edit?usp=sharing) 
 
+## User Stories
+
+### User Story 1
+
+As a user, I want to know if old movies are available on a streaming service I already have.
+
+Feature Tasks:
+User can search movies from API
+
+Acceptance Task:
+Ensure form is available for searching by movie title
+Ensure API returns movies that are available on streaming services
+
+Estimate: Large
+
+### User Story 2
+
+As a user, I want to keep track of movies I have watched that I like
+
+Feature Tasks:
+Database to add, store, and delete movie list
+Create log-in for users to see the movies they specifically wish to save
+
+Acceptance Task:
+Ensure movies successfully save to database
+User’s movies appear in their wish list
+
+Estimate: Large
+
+### User Story 3
+
+As a user, I want to mark movies so that I know if I liked them or didn’t like them
+
+Feature Tasks:
+Add image to indicate user has liked or disliked this movie
+
+Acceptance Task:
+Ensure marked movies remain marked only for that user
+
+Estimate: Small
+
+### User Story 4
+
+As a user, I want to see an image of the movie or from the movie
+
+Feature Tasks:
+Pull images from the API or another API to display
+
+Acceptance Task:
+Ensure movie image appear, or a message indicating image is not available
+
+Estimate: medium
+
+### User Story 5
+
+As a user, I want to see the title, date it was released, and a short description of the movie.
+Feature Tasks:
+User sees relevant movie data displayed
+
+Acceptance Task:
+Ensure schema has minimum requirements for movie data
+Ensure movie data is available or message indicating it is unavailable
+
+Estimate:  medium
+
+## Software Requirements
+
+## Domain Modeling
+
+<img width="508" alt="image" src="https://user-images.githubusercontent.com/113204667/200401669-a25ba751-92a5-44fe-b7ed-fadc07ca192e.png">
+
+## Wireframes
+
+<img width="473" alt="image" src="https://user-images.githubusercontent.com/113204667/200401840-f12a1e1a-6480-444f-95a5-e5257fc1316c.png">
+
+<img width="461" alt="image" src="https://user-images.githubusercontent.com/113204667/200401878-4d8a7484-c6f8-4ca1-9145-b1b526d9c630.png">
+
+## Database Schema / Diagram
+
+<img width="585" alt="image" src="https://user-images.githubusercontent.com/113204667/200401971-92688ee0-80a0-459e-8e48-13371352d6e8.png">
+
+
+## Vision
+
+	The Movie Night product will provide users a single location to be able to search for their favorite movie and find out which streaming service it is available for viewing.  With the increasingly larger pool of streaming services available, finding out which service has your favorite movie can be a daunting and overly time consuming task.  How frustrating would it be to search through all the streaming services individually to find out that none of them have your movie?  Movie Night will allow a user to quickly find out if they have to find a physical disc in time for their viewing party.  Movie Night also makes deciding on a date night film easier, because if it’s not on a user’s streaming service they can cross it off the list.
+
+## Scope
+
+IN
+Search for movies across multiple streaming services
+Indicate if the user likes or dislikes the movie
+Save a wish list of movies they would like to see so they don’t have to research every time.
+See an image of the movie, title, year release, and short description to verify it’s the movie they’re searching for
+
+OUT
+This site is not designed to provide suggestions of other movies
+This site will not show users where to find movies not available on streaming service
+
+## Minimum Viable Product
+
+	For this site to be considered functional the user will be able to input a movie title and return a message indicating the movie is not available or return the movie information and what service it is available on, and be able to save it to a wish list.
+
+Stretch goal
+
+## Functional Requirements
+
+User can sign into site
+User can search movies on streaming services
+User can save movies to their wish list
+Users can see image and information about movies
+Users can indicate they like or dislike a movie
+
+Data Flow
+
+The first data will be a react rendering of a log-in page where users will use auth O to authenticate themselves and bring up the search page.  The search page intake user data
+
+
+## Non-Functional Requirements
+
+Security: AO authentication will be used for users to sign into the site.
+Usability: 
+Navigation:  Page links will be consistently styled and located for easy navigation between pages
+Feature Purpose:  Search form, wish list, like/dislike buttons will be easily identified and appropriately located so users can easily determine what the feature is and what it can do
+Performance:  The search feature will return the user’s input in the form of a movie image, title, description and which streaming service it can be found on
 
