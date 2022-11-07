@@ -188,9 +188,11 @@ Estimate: Small
 As a user, I want to see an image of the movie or from the movie
 
 Feature Tasks:
+
 Pull images from the API or another API to display
 
 Acceptance Task:
+
 Ensure movie image appear, or a message indicating image is not available
 
 Estimate: medium
@@ -198,12 +200,15 @@ Estimate: medium
 ### User Story 5
 
 As a user, I want to see the title, date it was released, and a short description of the movie.
+
 Feature Tasks:
-User sees relevant movie data displayed
+
+- User sees relevant movie data displayed
 
 Acceptance Task:
-Ensure schema has minimum requirements for movie data
-Ensure movie data is available or message indicating it is unavailable
+
+- Ensure schema has minimum requirements for movie data
+- Ensure movie data is available or message indicating it is unavailable
 
 Estimate:  medium
 
@@ -226,44 +231,44 @@ Estimate:  medium
 
 ## Vision
 
-	The Movie Night product will provide users a single location to be able to search for their favorite movie and find out which streaming service it is available for viewing.  With the increasingly larger pool of streaming services available, finding out which service has your favorite movie can be a daunting and overly time consuming task.  How frustrating would it be to search through all the streaming services individually to find out that none of them have your movie?  Movie Night will allow a user to quickly find out if they have to find a physical disc in time for their viewing party.  Movie Night also makes deciding on a date night film easier, because if it’s not on a user’s streaming service they can cross it off the list.
+The Movie Night product will provide users a single location to be able to search for their favorite movie and find out which streaming service it is available for viewing.  With the increasingly larger pool of streaming services available, finding out which service has your favorite movie can be a daunting and overly time consuming task.  How frustrating would it be to search through all the streaming services individually to find out that none of them have your movie?  Movie Night will allow a user to quickly find out if they have to find a physical disc in time for their viewing party.  Movie Night also makes deciding on a date night film easier, because if it’s not on a user’s streaming service they can cross it off the list.
 
 ## Scope
 
 IN
-Search for movies across multiple streaming services
-Indicate if the user likes or dislikes the movie
-Save a wish list of movies they would like to see so they don’t have to research every time.
-See an image of the movie, title, year release, and short description to verify it’s the movie they’re searching for
+
+- Search for movies across multiple streaming services
+- Indicate if the user likes or dislikes the movie
+- Save a wish list of movies they would like to see so they don’t have to research every time.
+- See an image of the movie, title, year release, and short description to verify it’s the movie they’re searching for
 
 OUT
-This site is not designed to provide suggestions of other movies
-This site will not show users where to find movies not available on streaming service
+
+- This site is not designed to provide suggestions of other movies
+- This site will not show users where to find movies not available on streaming service
 
 ## Minimum Viable Product
 
-	For this site to be considered functional the user will be able to input a movie title and return a message indicating the movie is not available or return the movie information and what service it is available on, and be able to save it to a wish list.
-
-Stretch goal
+For this site to be considered functional the user will be able to input a movie title and return a message indicating the movie is not available or return the movie information and what service it is available on, and be able to save it to a wish list.
 
 ## Functional Requirements
 
-User can sign into site
-User can search movies on streaming services
-User can save movies to their wish list
-Users can see image and information about movies
-Users can indicate they like or dislike a movie
+- User can sign into site
+- User can search movies on streaming services
+- User can save movies to their wish list
+- Users can see image and information about movies
+- Users can indicate they like or dislike a movie
 
-Data Flow
+## Data Flow
 
-The first data will be a react rendering of a log-in page where users will use auth O to authenticate themselves and bring up the search page.  The search page intake user data
-
+The first data will be a react rendering of a log-in page where users will use auth O to authenticate themselves and bring up the search page.  The search page will intake user input in the form and send it through the server to the API OTT to search for the movie among the streaming services.  The return of that data will come back to the server and up to our front end component and end up as a result displaying data or a message displaying that the movie was not found.  Once movie data is displayed the user can click a button to save it to their ‘to watch list’.  From there, the data of the movie will be sent to a database to be stored.  Within the ‘to watch list’ will be another option of ‘favorites’.  At this point the user can rate the movie with a numerical input from 1-10 and save the movie to their favorites, following a similar pattern for data going to their ‘to watch list’ or they can select to delete from the ‘to watch list’ which will perform the delete action from the database, removing the movie from their lists.
 
 ## Non-Functional Requirements
 
 Security: AO authentication will be used for users to sign into the site.
+
 Usability: 
-Navigation:  Page links will be consistently styled and located for easy navigation between pages
-Feature Purpose:  Search form, wish list, like/dislike buttons will be easily identified and appropriately located so users can easily determine what the feature is and what it can do
-Performance:  The search feature will return the user’s input in the form of a movie image, title, description and which streaming service it can be found on
+- Navigation:  Page links will be consistently styled and located for easy navigation between pages
+- Feature Purpose:  Search form, wish list, like/dislike buttons will be easily identified and appropriately located so users can easily determine what the feature is and what it can do
+- Performance:  The search feature will return the user’s input in the form of a movie image, title, description and which streaming service it can be found on
 
